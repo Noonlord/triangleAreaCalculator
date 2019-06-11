@@ -12,5 +12,4 @@ class line():
 			self.slope = None
 		self.length = ((self.dotRight.x - self.dotLeft.x)**2 +  (self.dotRight.y - self.dotLeft.y)**2) ** 0.5
 		if self.slope is not None:
-			self.addition = self.dotLeft.y - self.slope*self.dotLeft.x 
-			#I didn't know what to call this but this is the a in the: "x - y + a =0" 
+			self.intercept = self.dotLeft.y - self.slope*self.dotLeft.x 
