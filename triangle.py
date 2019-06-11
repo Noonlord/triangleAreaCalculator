@@ -14,5 +14,5 @@ class triangle:
 		else:
 			self.baseLine = self.line2
 			self.tip = self.dot2
-		self.height = abs((self.baseLine.slope*self.tip.x - self.tip.y + self.baseLine.addition)) / (self.baseLine.slope ** 2 + 1) ** 0.5
+		self.height = abs((self.baseLine.slope*self.tip.x - self.tip.y + self.baseLine.intercept)) / (self.baseLine.slope ** 2 + 1) ** 0.5
 		self.area = self.height * self.baseLine.length * 0.5
